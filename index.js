@@ -62,28 +62,30 @@ app.get("/", async (req, res) => {
     // );
 
     res.send(`
-      <body style="background-color:#212121">
-          <div style="
-            background-color:#F8F8F8";
-            padding:50px; 
-            border-style:inset; 
-            border-radius:5px; 
-            border: 2px solid coral; 
-            color:#212121; 
-            display:flex;
-            flex-direction:column;
-            align-items:center; 
-            justify-content:center;
-            max-width:350px;
-            margin-top:200px
-          ">
-          <h1>Dolar Blue</h1>
-          <h2>Exchange rate in Argentina</h2>
-          <h2>Last Updated: ${actualizado}</h2>
-          <h2>Buy: <span style="font-weight:bold">${compraBlue}</span></h2>
-          <h2>Sell: <span style="font-weight:bold">${ventaBlue}</span></h2>
-          </div>
-      </body>
+      <div style="
+        background-color:#212121;
+        margin:auto
+      ">
+        <div style="
+          background-color:#F8F8F8";
+          padding:50px; 
+          border-style:inset; 
+          border-radius:5px; 
+          border: 2px solid coral; 
+          color:#212121; 
+          display:flex;
+          flex-direction:column;
+          align-items:center; 
+          justify-content:center;
+          max-width:350px;
+        ">
+        <h1>Dolar Blue</h1>
+        <h2>Exchange rate in Argentina</h2>
+        <h2>Last Updated: ${actualizado}</h2>
+        <h2>Buy: <span style="font-weight:bold">${compraBlue}</span></h2>
+        <h2>Sell: <span style="font-weight:bold">${ventaBlue}</span></h2>
+        </div>
+      </div>
     `);
 
     // res.send(await page.title());
