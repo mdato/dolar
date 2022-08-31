@@ -62,12 +62,8 @@ app.get("/", async (req, res) => {
     // );
 
     res.send(`
-      <div style="
-        background-color:#212121;
-        margin:auto
-      ">
         <div style="
-          background-color:#F8F8F8";
+          background-color:#f8f8f8";
           padding:50px; 
           border-style:inset; 
           border-radius:5px; 
@@ -78,6 +74,8 @@ app.get("/", async (req, res) => {
           align-items:center; 
           justify-content:center;
           max-width:350px;
+          margin-top:150px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         ">
         <h1>Dolar Blue</h1>
         <h2>Exchange rate in Argentina</h2>
@@ -85,7 +83,6 @@ app.get("/", async (req, res) => {
         <h2>Buy: <span style="font-weight:bold">${compraBlue}</span></h2>
         <h2>Sell: <span style="font-weight:bold">${ventaBlue}</span></h2>
         </div>
-      </div>
     `);
 
     // res.send(await page.title());
