@@ -63,19 +63,14 @@ app.get("/", async (req, res) => {
 
     res.send(`
         <div style="
-          background-color:#f8f8f8";
-          padding:50px; 
-          border-style:inset; 
-          border-radius:5px; 
-          border: 2px solid coral; 
-          color:#212121; 
+          padding:30px; 
           display:flex;
           flex-direction:column;
           align-items:center; 
           justify-content:center;
           max-width:350px;
           margin-top:150px;
-          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
         ">
         <h1>Dolar Blue</h1>
         <h2>Exchange rate in Argentina</h2>
