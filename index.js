@@ -35,32 +35,32 @@ app.get("/", async (req, res) => {
 
     let compraBlue = await page.$eval(
       ".values > .compra > .val",
-      // (el) => el.textContent
-      (el) => el.innerHTML
+      (el) => el.textContent
+      // (el) => el.innerHTML
     );
 
     let ventaBlue = await page.$eval(
       ".values > .venta > .val",
-      // (el) => el.textContent
-      (el) => el.innerHTML
+      (el) => el.textContent
+      // (el) => el.innerHTML
     );
 
     let actualizado = await page.$eval(
       ".update > .container",
-      // (el) => el.textContent
-      (el) => el.innerHTML
+      (el) => el.textContent
+      //(el) => el.innerHTML
     );
 
     actualizado = actualizado.slice(15);
 
     res.send(
       "\nLast Updated: " +
-        actualizado +
-        " - \nBlue Buy: " +
-        compraBlue +
-        " - \nBlue Sell: " +
-        ventaBlue +
-        " \n"
+      actualizado +
+      " - \nBlue Buy: " +
+      compraBlue +
+      " - \nBlue Sell: " +
+      ventaBlue +
+      " \n"
     );
 
     // res.send(await page.title());
