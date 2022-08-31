@@ -56,9 +56,9 @@ app.get("/", async (req, res) => {
     res.send(
       "\nLast Updated: " +
       actualizado +
-      " - \nBlue Buy: " +
+      " - \nBuy: " +
       compraBlue +
-      " - \nBlue Sell: " +
+      " - \nSell: " +
       ventaBlue +
       " \n"
     );
