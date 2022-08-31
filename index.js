@@ -42,13 +42,11 @@ app.get("/", async (req, res) => {
     let ventaBlue = await page.$eval(
       ".values > .venta > .val",
       (el) => el.textContent
-      // (el) => el.innerHTML
     );
 
     let actualizado = await page.$eval(
       ".update > .container",
       (el) => el.textContent
-      //(el) => el.innerHTML
     );
 
     actualizado = actualizado.slice(15);
