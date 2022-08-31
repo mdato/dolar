@@ -52,18 +52,26 @@ app.get("/", async (req, res) => {
     actualizado = actualizado.slice(15);
 
 
-    res.send("\nLast Updated: " +
-    actualizado +
-    " - \nBlue Buy: " +
-    compraBlue +
-    " - \nBlue Sell: " +
-    ventaBlue +
-    " \n")
+    // res.send("\nLast Updated: " +
+    // actualizado +
+    // " - \nBlue Buy: " +
+    // compraBlue +
+    // " - \nBlue Sell: " +
+    // ventaBlue +
+    // " \n")
+
+    res.send("Last Updated: " +
+    actualizado)
+    res.send("Buy: " +
+    compraBlue)
+    res.send("Sell: " +
+    ventaBlue)
+
 
 
     // res.send(await page.title());
 
-    // await browser.close();
+    await browser.close();
 
   } catch (err) {
     console.error(err);
