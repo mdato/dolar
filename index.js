@@ -61,6 +61,15 @@ app.get("/", async (req, res) => {
       " \n"
     );
 
+    res.send(`
+    <div style={{color: "red", display: "flex", alignItems: "center", justifyContent: "center"}}>
+    <h3>Dolar Blue exchange rate in Argentina</h3>
+    <p>Last Updated: ${actualizado}</p>
+    <p>Buy: ${compraBlue}</p>
+    <p>Sell: ${ventaBlue}</p>
+    </div>
+    `);
+
     // res.send(await page.title());
 
     await browser.close();
