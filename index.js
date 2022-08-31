@@ -35,44 +35,37 @@ app.get("/", async (req, res) => {
 
     let compraBlue = await page.$eval(
       ".values > .compra > .val",
-      (el) => el.textContent
+      // (el) => el.textContent
+      (el) => el.innerHTML
     );
-  
+
     let ventaBlue = await page.$eval(
       ".values > .venta > .val",
-      (el) => el.textContent
-      // (el) => el.innerHTML
+      // (el) => el.textContent
+      (el) => el.innerHTML
     );
-  
+
     let actualizado = await page.$eval(
       ".update > .container",
-      (el) => el.textContent
+      // (el) => el.textContent
+      (el) => el.innerHTML
     );
-  
+
     actualizado = actualizado.slice(15);
 
-
-    // res.send("\nLast Updated: " +
-    // actualizado +
-    // " - \nBlue Buy: " +
-    // compraBlue +
-    // " - \nBlue Sell: " +
-    // ventaBlue +
-    // " \n")
-
-    res.send("Last Updated: " +
-    actualizado)
-    res.send("Buy: " +
-    compraBlue)
-    res.send("Sell: " +
-    ventaBlue)
-
-
+    res.send(
+      "\nLast Updated: " +
+        actualizado +
+        " - \nBlue Buy: " +
+        compraBlue +
+        " - \nBlue Sell: " +
+        ventaBlue +
+        " \n"
+    );
 
     // res.send(await page.title());
 
     await browser.close();
-
   } catch (err) {
     console.error(err);
     return null;
