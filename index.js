@@ -51,15 +51,15 @@ app.get("/", async (req, res) => {
 
     actualizado = actualizado.slice(15);
 
-    res.send(
-      "\nLast Updated: " +
-      actualizado +
-      " - \nBuy: " +
-      compraBlue +
-      " - \nSell: " +
-      ventaBlue +
-      " \n"
-    );
+    // res.send(
+    //   "\nLast Updated: " +
+    //   actualizado +
+    //   " - \nBuy: " +
+    //   compraBlue +
+    //   " - \nSell: " +
+    //   ventaBlue +
+    //   " \n"
+    // );
 
     res.send(`
     <div style={{color: "red", display: "flex", alignItems: "center", justifyContent: "center"}}>
