@@ -71,12 +71,14 @@ app.get("/", async (req, res) => {
         display:flex;
         flex-direction:column;
         align-items:center; 
-        justify-content:center
+        justify-content:center;
+        max-width:350px;
+        margin-top:200px
       ">
-      <h3>Dolar Blue exchange rate in Argentina</h3>
-      <p>Last Updated: ${actualizado}</p>
-      <p>Buy: ${compraBlue}</p>
-      <p>Sell: ${ventaBlue}</p>
+      <h1>Dolar Blue exchange rate in Argentina</h1>
+      <h2>Last Updated: ${actualizado}</h2>
+      <h2>Buy: <span style="font-weight:bold">${compraBlue}</span></h2>
+      <h2>Sell: <span style="font-weight:bold">${ventaBlue}</span></h2>
       </div>
     `);
 
