@@ -63,7 +63,6 @@ app.get("/", async (req, res) => {
 
     res.send(`
       <body style="background-color:#212121">
-        <div style="margin:auto">
           <div style="
             background-color:#F8F8F8";
             padding:50px; 
@@ -84,7 +83,6 @@ app.get("/", async (req, res) => {
           <h2>Buy: <span style="font-weight:bold">${compraBlue}</span></h2>
           <h2>Sell: <span style="font-weight:bold">${ventaBlue}</span></h2>
           </div>
-        </div>
       </body>
     `);
 
