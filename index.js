@@ -62,7 +62,7 @@ app.get("/", async (req, res) => {
     // );
 
     res.send(`
-    <div style={{color: "red", display: "flex", alignItems: "center", justifyContent: "center"}}>
+    <div style="padding:50px; border-style:inset; border-radius:5px; border: 2px solid coral; color:#212121; display:flex; align-items:center; justify-content:center">
     <h3>Dolar Blue exchange rate in Argentina</h3>
     <p>Last Updated: ${actualizado}</p>
     <p>Buy: ${compraBlue}</p>
