@@ -69,14 +69,16 @@ app.get("/", async (req, res) => {
           align-items:center; 
           justify-content:center;
           max-width:350px;
-          margin-top:150px;
+          position: absolute;
+          top: 50%; right: 50%;
+          transform: translate(-50%,-50%);
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
         ">
         <h1>Dolar Blue</h1>
         <h2>Exchange rate in Argentina</h2>
         <h2>Last Updated: ${actualizado}</h2>
-        <h2>Buy: <span style="font-weight:bold">${compraBlue}</span></h2>
-        <h2>Sell: <span style="font-weight:bold">${ventaBlue}</span></h2>
+        <h2>Buy: <b>${compraBlue}</b></h2>
+        <h2>Sell: <b>${ventaBlue}</b></h2>
         </div>
     `);
 
