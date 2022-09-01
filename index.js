@@ -63,15 +63,17 @@ app.get("/", async (req, res) => {
 
     res.send(`
         <div style="
-          padding:30px; 
-          display:flex;
-          flex-direction:column;
-          align-items:center; 
-          justify-content:center;
-          max-width:350px;
+          padding: 30px; 
+          display: flex;
+          flex-direction: column;
+          align-items: center; 
+          justify-content: center;
+          max-width: 350px;
           position: absolute;
-          top: 50%; right: 50%;
+          top: 50%; 
+          left: 50%;
           transform: translate(-50%,-50%);
+          zoom: 1.3;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
         ">
         <h1>Dolar Blue</h1>
