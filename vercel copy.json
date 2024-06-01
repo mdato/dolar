@@ -9,6 +9,9 @@
         }
       }
     ],
+    "hooks": {
+      "prebuild": "npm install --no-package-lock"
+    },
     "routes": [
       {
         "src": "/",
