@@ -4,7 +4,6 @@
 ### BACode by Marcelo Dato :: Full Stack Developer :: LingBodie
 https://bacode.com.ar
 
-<<<<<<< HEAD
 ### How to use
 node index.js
 localhost:3000
