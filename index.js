@@ -21,7 +21,7 @@ app.get("/", async (req, res) => {
       args: [...chrome.args, "--hide-scrollbars", "--disable-web-security"],
       defaultViewport: chrome.defaultViewport,
       executablePath: await chrome.executablePath,
-      headless: true,
+      headless: 'new',
       ignoreHTTPSErrors: true,
     };
   }
